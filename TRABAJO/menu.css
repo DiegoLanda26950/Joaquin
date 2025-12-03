@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #697C9F;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #F0F0F0;
+    cursor: pointer;
+}
+
+.profile:hover {
+    border-color: #183263;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-profile {
+    background: #F0F0F0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #183263;
+}
+
+.user-info h2 {
+    color: #183263;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.user-info p {
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+.card-menu {
+    background: #F0F0F0;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- TAMAÑO DE ICONOS ESTANDARIZADO (Igual que ★) --- */
+.icono {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.menu-item {
+    color: #183263;
+    text-decoration: none;
+    padding: 14px 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.menu-item:hover {
+    background: #E0E0E0;
+}
+
+/* --- ESTRELLAS --- */
+.star {
+    color: #183263;
+    font-size: 22px;
+}

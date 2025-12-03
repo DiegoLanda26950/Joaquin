@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #697C9F;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #F0F0F0;
+}
+
+.profile:hover {
+    border-color: #183263;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-main {
+    background: #F0F0F0;
+    border-radius: 15px;
+    padding: 45px 35px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #183263;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    color: #2c3e50;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+.btn-action {
+    background: #CCDAE0;
+    color: #183263;
+    padding: 16px 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-action:hover {
+    background: #b8c5d0;
+    transform: translateY(-2px);
+}
+
+.icon {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.icon-menu {
+    font-size: 22px;
+}
+
+.bottom-nav {
+    background: #F0F0F0;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #697C9F;
+    cursor: pointer;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    color: #183263;
+    transform: scale(1.1);
+}
+
+.nav-btn.active {
+    color: #183263;
+    transform: scale(1.15);
+}

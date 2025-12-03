@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timelapse - Crear Cápsula</title>
+    <link rel="stylesheet" href="crear.css">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img src="./img/LogoCompletoClaro-removebg-preview.png" alt="Timelapse" class="logo">
+        </a>
+        <a href="menu.html">
+            <img src="./img/Perfil-removebg-preview.png" alt="Perfil" class="profile">
+        </a>
+    </header>
+
+    <main>
+        <section class="card-form">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre Capsula:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Verano 2025" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="participantes">Participantes:</label>
+                    <input type="text" id="participantes" name="participantes" placeholder="Añade participantes">
+                </div>
+
+                <div class="form-group">
+                    <label for="recuerdos">Pon tus recuerdos aqui:</label>
+                    <textarea id="recuerdos" name="recuerdos" placeholder="Escribe tus recuerdos..." required></textarea>
+                </div>
+
+                <div class="btn-media">
+                    <button type="button" class="btn-add">
+                        <span>📷</span> Añadir imagen
+                    </button>
+                    <button type="button" class="btn-add">
+                        <span>🎥</span> Añadir video
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <hr>
+
+                <a href="home.html" class="btn-submit">Sellar Capsula</a>
+                <a href="home.html" class="btn-cancel">Cancelar</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
