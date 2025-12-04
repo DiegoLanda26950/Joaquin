@@ -1,56 +1,56 @@
 .card-form {
-    background: $color-background;
-    border-radius: $border-radius-xl;
-    padding: $spacing-xl 35px;
-    box-shadow: $shadow-md;
-    margin-top: $spacing-lg;
+    background: $color-background; // color de fondo definido por la variable
+    border-radius: $border-radius-xl; // esquinas muy redondeadas (extra grandes)
+    padding: $spacing-xl 35px; // relleno interno: vertical con variable y horizontal fijo de 35px
+    box-shadow: $shadow-md; // sombra de tamaño medio
+    margin-top: $spacing-lg; // espacio superior grande para separar la tarjeta de otros elementos
 }
 
 .card-form__form {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-lg;
+    display: flex; // convierte el formulario en un contenedor flexbox
+    flex-direction: column; // organiza los elementos en columna
+    gap: $spacing-lg; // espacio vertical entre los grupos de campos
 }
 
 .card-form__group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: left;
+    display: flex; // contenedor flexbox
+    flex-direction: column; // organiza los elementos (label + input) en columna
+    gap: 8px; // espacio entre el label y el campo
+    text-align: left; // alinea el texto a la izquierda
 }
 
 .card-form__label {
-    color: $color-primary;
-    font-weight: 600;
-    font-size: 15px;
+    color: $color-primary; // texto en color principal
+    font-weight: 600; // seminegrita
+    font-size: 15px; // tamaño de fuente mediano
 }
 
 .card-form__input,
 .card-form__textarea {
-    padding: 12px;
-    border: 2px solid #D0D0D0;
-    border-radius: $border-radius-sm;
-    font-size: 14px;
-    font-family: $font-family;
-    transition: border-color 0.3s;
+    padding: 12px; // espacio interno
+    border: 2px solid #D0D0D0; // borde gris claro de 2px
+    border-radius: $border-radius-sm; // esquinas ligeramente redondeadas
+    font-size: 14px; // tamaño de fuente pequeño-mediano
+    font-family: $font-family; // fuente definida en la variable global
+    transition: border-color 0.3s; // transición suave al cambiar el color del borde
 
     &:focus {
-        outline: none;
-        border-color: $color-secondary;
+        outline: none; // elimina el contorno azul por defecto
+        border-color: $color-secondary; // cambia el borde al color secundario al enfocar
     }
 
     &::placeholder {
-        color: #999;
+        color: #999; // color gris para el texto de placeholder
     }
 }
 
 .card-form__textarea {
-    min-height: 120px;
-    resize: vertical;
+    min-height: 120px; // altura mínima para el área de texto
+    resize: vertical; // permite redimensionar solo en vertical
 }
 
 .card-form__separator {
-    border: none;
-    border-top: 1px solid #D0D0D0;
-    margin: $spacing-sm 0;
+    border: none; // elimina cualquier borde por defecto
+    border-top: 1px solid #D0D0D0; // añade una línea superior gris como separador
+    margin: $spacing-sm 0; // espacio vertical alrededor del separador
 }

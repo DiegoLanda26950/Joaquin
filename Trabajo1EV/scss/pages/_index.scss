@@ -1,64 +1,64 @@
 .welcome-card {
-    margin-top: $spacing-xl;
+    margin-top: $spacing-xl; // añade un margen superior grande usando la variable de espaciado
 }
 
 .welcome-card__title {
-    font-size: 28px;
-    color: $color-primary;
-    font-weight: 700;
-    margin-bottom: $spacing-lg;
-    line-height: 1.3;
+    font-size: 28px; // tamaño de fuente de 28 píxeles
+    color: $color-primary; // color principal definido en variables
+    font-weight: 700; // texto en negrita (peso fuerte)
+    margin-bottom: $spacing-lg; // margen inferior grande
+    line-height: 1.3; // altura de línea para mejorar la legibilidad
 }
 
 .welcome-card__btn {
-    background: $color-primary;
-    color: $color-background;
-    padding: 14px 50px;
-    border-radius: $border-radius-md;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: $font-size-base;
-    display: inline-block;
-    margin-bottom: $spacing-md;
-    transition: all 0.3s;
+    background: $color-primary; // color de fondo principal
+    color: $color-background; // color del texto, usando el color de fondo definido
+    padding: 14px 50px; // espacio interno: 14px arriba/abajo y 50px izquierda/derecha
+    border-radius: $border-radius-md; // bordes redondeados medianos
+    text-decoration: none; // elimina subrayado en enlaces
+    font-weight: 600; // texto semi-negrita
+    font-size: $font-size-base; // tamaño de fuente base definido en variables
+    display: inline-block; // se comporta como bloque en línea
+    margin-bottom: $spacing-md; // margen inferior mediano
+    transition: all 0.3s; // transición suave de todas las propiedades en 0.3 segundos
 
     &:hover {
-        background: darken($color-primary, 10%);
-        transform: translateY(-2px);
+        background: darken($color-primary, 10%); // oscurece el color de fondo un 10% al pasar el ratón
+        transform: translateY(-2px); // mueve el botón ligeramente hacia arriba al hacer hover
     }
 }
 
 .welcome-card__text {
-    font-size: 14px;
-    color: $color-dark;
+    font-size: 14px; // tamaño de fuente pequeño
+    color: $color-dark; // color oscuro para el texto
 }
 
 .info-card__description {
-    color: $color-dark;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: $spacing-lg;
+    color: $color-dark; // color oscuro para la descripción
+    font-size: 15px; // tamaño de fuente mediano
+    line-height: 1.6; // altura de línea amplia para mejor lectura
+    margin-bottom: $spacing-lg; // margen inferior grande
 }
 
 .info-card__title {
-    color: $color-primary;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: $spacing-md;
+    color: $color-primary; // color principal para el título
+    font-size: 20px; // tamaño de fuente más grande
+    font-weight: 700; // texto en negrita
+    margin-bottom: $spacing-md; // margen inferior mediano
 }
 
 .info-card__cta {
-    font-size: 15px;
-    color: $color-dark;
+    font-size: 15px; // tamaño de fuente mediano
+    color: $color-dark; // color oscuro para el texto
 }
 
 .link {
-    color: $color-secondary;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
+    color: $color-secondary; // color secundario para enlaces
+    text-decoration: none; // elimina subrayado
+    font-weight: 600; // texto semi-negrita
+    transition: color 0.3s; // transición suave del color en 0.3 segundos
 
     &:hover {
-        color: $color-primary;
+        color: $color-primary; // cambia a color principal al pasar el ratón
     }
 }

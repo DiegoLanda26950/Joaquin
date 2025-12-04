@@ -1,28 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; // elimina el margen por defecto de todos los elementos
+    padding: 0; // elimina el relleno por defecto de todos los elementos
+    box-sizing: border-box; // hace que el ancho y alto incluyan el padding y el borde, evitando cálculos extra
 }
 
 body {
     font-family: $font-family;
-    background-image: url('../img/fondo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-image: url('../img/fondo.png'); // establece una imagen de fondo
+    background-size: cover; //Cubre area visible
+    background-position: center; // centra la imagen de fondo
+    background-repeat: no-repeat; // evita que la imagen se repita
+    background-attachment: fixed; 
+    min-height: 100vh; // asegura que el body tenga al menos la altura completa de la ventana
+    display: flex; // convierte el body en un contenedor flexbox
+    flex-direction: column; // organiza los elementos hijos en columna
 }
 
 main {
-    flex: 1;
-    padding: $spacing-lg;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-md;
-    max-width: 420px;
-    width: 100%;
-    margin: 0 auto;
+    flex: 1; // hace que el main ocupe todo el espacio disponible dentro del body
+    padding: $spacing-lg; //relleno interno
+    display: flex; // main=flexbox
+    flex-direction: column; // organizado en columnass
+    gap: $spacing-md; // separacion
+    max-width: 420px; 
+    width: 100%; 
+    margin: 0 auto; // centra el main horizontalmente dentro del body
 }

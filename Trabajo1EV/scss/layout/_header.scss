@@ -1,52 +1,52 @@
 .header {
-    background: $color-secondary;
-    padding: $spacing-lg $spacing-xl;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: $shadow-sm;
+    background: $color-secondary; // color de fondo secundario para la cabecera
+    padding: $spacing-lg $spacing-xl; // relleno interno: vertical grande y horizontal extra grande
+    display: flex; // convierte la cabecera en un contenedor flexbox
+    justify-content: space-between; // distribuye los elementos a los extremos (logo a la izquierda, perfil/botón a la derecha)
+    align-items: center; // alinea verticalmente los elementos al centro
+    box-shadow: $shadow-sm; // sombra ligera para dar profundidad
 }
 
 .header--fixed {
-    box-shadow: none;
+    box-shadow: none; // variante de cabecera fija sin sombra
 }
 
 .header__logo {
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s;
+    height: 40px; // altura fija para el logo
+    cursor: pointer; // cursor tipo mano al pasar por encima
+    transition: transform 0.3s; // transición suave para transformaciones
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.05); // efecto de zoom ligero al pasar el ratón
     }
 }
 
 .header__profile {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid $color-background;
-    cursor: pointer;
-    transition: border-color 0.3s;
+    width: 45px; // ancho fijo para la imagen de perfil
+    height: 45px; // alto fijo para la imagen de perfil
+    border-radius: 50%; // convierte la imagen en un círculo
+    object-fit: cover; // ajusta la imagen para cubrir el área sin deformarse
+    border: 2px solid $color-background; // borde claro alrededor de la imagen
+    cursor: pointer; // cursor tipo mano
+    transition: border-color 0.3s; // transición suave para el color del borde
 
     &:hover {
-        border-color: $color-primary;
+        border-color: $color-primary; // cambia el borde al color principal al pasar el ratón
     }
 }
 
 .header__btn {
-    background: $color-primary;
-    color: $color-background;
-    padding: 10px 24px;
-    border-radius: $border-radius-md;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: all 0.3s;
+    background: $color-primary; // fondo con el color principal
+    color: $color-background; // texto en color claro (normalmente blanco)
+    padding: 10px 24px; // relleno interno vertical y horizontal
+    border-radius: $border-radius-md; // esquinas redondeadas medianas
+    text-decoration: none; // elimina subrayado en caso de ser enlace
+    font-weight: 600; // seminegrita
+    font-size: 15px; // tamaño de fuente mediano
+    transition: all 0.3s; // transición suave para cambios
 
     &:hover {
-        background: darken($color-primary, 10%);
-        transform: translateY(-2px);
+        background: darken($color-primary, 10%); // oscurece el fondo un 10% al pasar el ratón
+        transform: translateY(-2px); // eleva ligeramente el botón
     }
 }

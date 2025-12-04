@@ -1,66 +1,66 @@
 .footer {
-    background: $color-dark;
-    padding: $spacing-xl $spacing-lg;
-    color: $color-background;
-    font-size: 14px;
+    background: $color-dark; // fondo oscuro para el pie de página
+    padding: $spacing-xl $spacing-lg; // relleno interno: vertical grande y horizontal mediano
+    color: $color-background; // color del texto (normalmente claro/blanco)
+    font-size: 14px; // tamaño base de fuente pequeño
 }
 
 .footer__content {
-    max-width: 420px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    max-width: 420px; // ancho máximo del contenido del footer
+    margin: 0 auto; // centra horizontalmente el contenido
+    display: flex; // convierte en contenedor flexbox
+    flex-direction: column; // organiza los elementos en columna
+    gap: 25px; // espacio vertical entre secciones
 }
 
 .footer__nav {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-sm;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(240, 240, 240, 0.2);
+    display: flex; // contenedor flexbox
+    flex-direction: column; // organiza los enlaces en columna
+    gap: $spacing-sm; // espacio pequeño entre enlaces
+    padding-bottom: 15px; // espacio inferior
+    border-bottom: 1px solid rgba(240, 240, 240, 0.2); // línea divisoria semitransparente
 }
 
 .footer__link {
-    color: $color-background;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 15px;
+    color: $color-background; // color claro para los enlaces
+    text-decoration: none; // elimina subrayado
+    transition: color 0.3s; // transición suave en el color
+    font-size: 15px; // tamaño de fuente mediano
 
     &:hover {
-        color: $color-accent;
+        color: $color-accent; // cambia a color de acento al pasar el ratón
     }
 }
 
 .footer__contact {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(240, 240, 240, 0.2);
+    display: flex; // contenedor flexbox
+    flex-direction: column; // organiza los textos en columna
+    gap: 8px; // espacio entre elementos
+    padding-bottom: 15px; // espacio inferior
+    border-bottom: 1px solid rgba(240, 240, 240, 0.2); // línea divisoria semitransparente
 }
 
 .footer__contact-text {
-    color: $color-background;
-    font-size: 15px;
+    color: $color-background; // texto claro
+    font-size: 15px; // tamaño de fuente mediano
 }
 
 .footer__social {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
+    display: flex; // contenedor flexbox
+    flex-direction: row; // organiza los iconos/enlaces en fila
+    gap: 20px; // espacio horizontal entre iconos
+    justify-content: center; // centra los iconos en el contenedor
 }
 
 .footer__social-link {
-    color: $color-background;
-    text-decoration: none;
-    transition: all 0.3s;
-    font-size: 15px;
-    font-weight: 500;
+    color: $color-background; // color claro para los enlaces sociales
+    text-decoration: none; // sin subrayado
+    transition: all 0.3s; // transición suave para color y transformaciones
+    font-size: 15px; // tamaño de fuente mediano
+    font-weight: 500; // grosor medio
 
     &:hover {
-        color: $color-accent;
-        transform: translateY(-2px);
+        color: $color-accent; // cambia a color de acento al pasar el ratón
+        transform: translateY(-2px); // efecto de elevación ligera
     }
 }

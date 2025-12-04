@@ -1,62 +1,63 @@
-@media (max-width: 480px) {
+@media (max-width: 480px) { // reglas aplicadas solo en pantallas pequeñas (máx. 480px de ancho)
+
     .header {
-        padding: 15px $spacing-lg;
+        padding: 15px $spacing-lg; // reduce el padding de la cabecera para móviles
     }
 
     .header__logo {
-        height: 35px;
+        height: 35px; // logo más pequeño en pantallas reducidas
     }
 
     .header__profile {
-        width: 40px;
+        width: 40px; // imagen de perfil más pequeña
         height: 40px;
     }
 
     .main {
-        padding: $spacing-xl 15px;
+        padding: $spacing-xl 15px; // reduce el padding horizontal del contenido principal
     }
 
     .card,
     .card-contact,
     .card-main,
     .card-form {
-        padding: 35px 25px;
+        padding: 35px 25px; // ajusta el relleno interno de las tarjetas para móviles
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 20px; // títulos principales más pequeños
     }
 
     .card-contact__option {
-        font-size: $font-size-base;
-        padding: 14px 16px;
+        font-size: $font-size-base; // tamaño de fuente base para las opciones de contacto
+        padding: 14px 16px; // reduce el padding para que se adapten mejor en móviles
     }
 
     // Footer responsive
     .footer {
-        padding: $spacing-lg 15px;
-        font-size: 13px;
+        padding: $spacing-lg 15px; // menos padding horizontal en el footer
+        font-size: 13px; // fuente más pequeña en el pie de página
     }
 
     .footer__content {
-        gap: $spacing-lg;
+        gap: $spacing-lg; // aumenta el espacio entre secciones del footer
     }
 
     .footer__nav,
     .footer__contact {
-        gap: 8px;
+        gap: 8px; // espacio reducido entre elementos de navegación y contacto
     }
 
     .footer__link,
     .footer__contact-text {
-        font-size: 14px;
+        font-size: 14px; // fuente más pequeña para enlaces y textos de contacto
     }
 
     .footer__social {
-        gap: 15px;
+        gap: 15px; // menos espacio entre iconos sociales
     }
 
     .footer__social-link {
-        font-size: 14px;
+        font-size: 14px; // fuente más pequeña para enlaces de redes sociales
     }
 }

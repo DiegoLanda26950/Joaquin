@@ -1,173 +1,174 @@
 .card {
-    background: $color-background;
-    border-radius: $border-radius-xl;
-    padding: $spacing-xl 35px;
-    box-shadow: $shadow-md;
-    text-align: center;
+    background: $color-background; // color de fondo definido por la variable
+    border-radius: $border-radius-xl; // esquinas muy redondeadas (extra grandes)
+    padding: $spacing-xl 35px; // relleno interno: vertical con variable y horizontal fijo de 35px
+    box-shadow: $shadow-md; // sombra de tamaño medio
+    text-align: center; // centra el texto dentro de la tarjeta
 }
 
 // Card de perfil
 .card-profile {
-    background: $color-background;
-    border-radius: $border-radius-lg;
-    padding: $spacing-lg;
-    display: flex;
-    align-items: center;
-    gap: $spacing-md;
-    box-shadow: $shadow-sm;
+    background: $color-background; // fondo claro
+    border-radius: $border-radius-lg; // esquinas redondeadas grandes
+    padding: $spacing-lg; // relleno interno amplio
+    display: flex; // convierte en contenedor flexbox
+    align-items: center; // alinea verticalmente los elementos al centro
+    gap: $spacing-md; // espacio entre elementos hijos
+    box-shadow: $shadow-sm; // sombra ligera
 }
 
 .card-profile__img {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid $color-primary;
+    width: 65px; // ancho fijo de la imagen
+    height: 65px; // alto fijo de la imagen
+    border-radius: 50%; // convierte la imagen en un círculo
+    object-fit: cover; // ajusta la imagen para cubrir el área sin deformarse
+    border: 3px solid $color-primary; // borde circular de 3px con color principal
 }
 
 .card-profile__info {
+    // contenedor para la información del perfil (sin estilos definidos aquí)
 }
 
 .card-profile__title {
-    color: $color-primary;
-    font-size: $font-size-large;
-    margin-bottom: $spacing-xs;
-    font-weight: 600;
+    color: $color-primary; // texto en color principal
+    font-size: $font-size-large; // fuente grande
+    margin-bottom: $spacing-xs; // espacio inferior pequeño
+    font-weight: 600; // seminegrita
 }
 
 .card-profile__subtitle {
-    color: $color-dark;
-    font-size: $font-size-small;
+    color: $color-dark; // texto en color oscuro
+    font-size: $font-size-small; // fuente pequeña
 }
 
 // Card de menú
 .card-menu {
-    background: $color-background;
-    border-radius: $border-radius-lg;
-    padding: $spacing-sm;
-    box-shadow: $shadow-sm;
+    background: $color-background; // fondo claro
+    border-radius: $border-radius-lg; // esquinas redondeadas grandes
+    padding: $spacing-sm; // relleno pequeño
+    box-shadow: $shadow-sm; // sombra ligera
 }
 
 .card-menu__nav {
-    display: flex;
-    flex-direction: column;
+    display: flex; // contenedor flexbox
+    flex-direction: column; // organiza los elementos en columna
 }
 
 .card-menu__item {
-    color: $color-primary;
-    text-decoration: none;
-    padding: 14px 12px;
-    display: flex;
-    align-items: center;
-    gap: $spacing-md;
-    font-size: $font-size-base;
-    border-radius: $border-radius-sm;
-    cursor: pointer;
-    transition: all 0.2s;
+    color: $color-primary; // texto en color principal
+    text-decoration: none; // sin subrayado
+    padding: 14px 12px; // relleno interno vertical y horizontal
+    display: flex; // contenedor flexbox
+    align-items: center; // alinea verticalmente al centro
+    gap: $spacing-md; // espacio entre icono y texto
+    font-size: $font-size-base; // tamaño base de fuente
+    border-radius: $border-radius-sm; // esquinas ligeramente redondeadas
+    cursor: pointer; // cursor tipo mano
+    transition: all 0.2s; // transición rápida
 
     &:hover {
-        background: #E0E0E0;
+        background: #E0E0E0; // fondo gris claro al pasar el ratón
     }
 }
 
 .card-menu__item--danger {
-    color: $color-danger;
+    color: $color-danger; // texto en color de peligro (rojo normalmente)
 }
 
 .card-menu__icon {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
+    width: 22px; // ancho fijo del icono
+    height: 22px; // alto fijo del icono
+    object-fit: contain; // ajusta el icono sin recortarlo
 }
 
 .card-menu__star {
-    color: $color-primary;
-    font-size: 22px;
+    color: $color-primary; // color principal para el icono estrella
+    font-size: 22px; // tamaño de fuente grande
 }
 
 .card-menu__item--danger .card-menu__star {
-    color: $color-danger;
+    color: $color-danger; // estrella en color rojo si el item es peligroso
 }
 
 // Card de contacto
 .card-contact {
-    background: $color-background;
-    border-radius: $border-radius-xl;
-    padding: 45px 35px;
-    width: 100%;
-    max-width: 420px;
-    text-align: center;
-    box-shadow: $shadow-md;
+    background: $color-background; // fondo claro
+    border-radius: $border-radius-xl; // esquinas muy redondeadas
+    padding: 45px 35px; // relleno interno amplio
+    width: 100%; // ocupa todo el ancho disponible
+    max-width: 420px; // límite máximo de ancho
+    text-align: center; // centra el texto
+    box-shadow: $shadow-md; // sombra media
 }
 
 .card-contact__title {
-    font-size: $font-size-xlarge;
-    margin-bottom: 35px;
-    color: $color-primary;
-    font-weight: 700;
-    line-height: 1.4;
+    font-size: $font-size-xlarge; // fuente extra grande
+    margin-bottom: 35px; // espacio inferior amplio
+    color: $color-primary; // texto en color principal
+    font-weight: 700; // negrita fuerte
+    line-height: 1.4; // altura de línea para mejor legibilidad
 }
 
 .card-contact__nav {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display: flex; // contenedor flexbox
+    flex-direction: column; // organiza en columna
+    gap: 8px; // espacio entre opciones
 }
 
 .card-contact__option {
-    color: $color-primary;
-    font-size: $font-size-medium;
-    padding: 16px $spacing-lg;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: $border-radius-md;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    gap: $spacing-md;
-    text-align: left;
-    font-weight: 500;
+    color: $color-primary; // texto en color principal
+    font-size: $font-size-medium; // fuente mediana
+    padding: 16px $spacing-lg; // relleno interno vertical y horizontal con variable
+    text-decoration: none; // sin subrayado
+    cursor: pointer; // cursor tipo mano
+    border-radius: $border-radius-md; // esquinas redondeadas medianas
+    transition: all 0.3s; // transición suave
+    display: flex; // contenedor flexbox
+    align-items: center; // alinea verticalmente al centro
+    gap: $spacing-md; // espacio entre icono y texto
+    text-align: left; // alinea el texto a la izquierda
+    font-weight: 500; // grosor medio
 
     &:hover {
-        background: $color-accent;
-        transform: translateX(5px);
+        background: $color-accent; // fondo de acento al pasar el ratón
+        transform: translateX(5px); // desplaza el botón 5px hacia la derecha
     }
 }
 
 .card-contact__icon {
-    font-size: 22px;
-    min-width: 25px;
-    text-align: center;
+    font-size: 22px; // tamaño de fuente para el icono
+    min-width: 25px; // ancho mínimo para mantener alineación
+    text-align: center; // centra el icono dentro de su espacio
 }
 
 // Card principal (home)
 .card-main {
-    background: $color-background;
-    border-radius: $border-radius-xl;
-    padding: $spacing-xxl 70px;
-    box-shadow: $shadow-md;
-    text-align: center;
-    margin-top: $spacing-lg;
+    background: $color-background; // fondo claro
+    border-radius: $border-radius-xl; // esquinas muy redondeadas
+    padding: $spacing-xxl 70px; // relleno interno muy amplio
+    box-shadow: $shadow-md; // sombra media
+    text-align: center; // centra el texto
+    margin-top: $spacing-lg; // espacio superior grande
 }
 
 .card-main__title {
-    font-size: 22px;
-    color: $color-primary;
-    font-weight: 700;
-    margin-bottom: $spacing-md;
+    font-size: 22px; // fuente mediana-grande
+    color: $color-primary; // texto en color principal
+    font-weight: 700; // negrita fuerte
+    margin-bottom: $spacing-md; // espacio inferior mediano
 }
 
 .card-main__subtitle {
-    color: $color-dark;
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    color: $color-dark; // texto en color oscuro
+    font-size: 15px; // fuente pequeña-mediana
+    line-height: 1.5; // altura de línea para legibilidad
+    margin-bottom: 30px; // espacio inferior amplio
 }
 
 .card-main .btn-action {
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-md; // espacio inferior entre botones
     
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0; // elimina el margen inferior del último botón
     }
 }

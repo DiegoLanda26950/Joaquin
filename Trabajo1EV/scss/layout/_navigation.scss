@@ -1,24 +1,24 @@
 .bottom-nav {
-    background: $color-background;
-    padding: $spacing-md 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    bottom: 0;
+    background: $color-background; // fondo claro definido por la variable
+    padding: $spacing-md 0; // relleno vertical mediano y sin relleno horizontal
+    display: flex; // convierte la barra en un contenedor flexbox
+    justify-content: space-around; // distribuye los botones con espacio uniforme entre ellos
+    align-items: center; // alinea verticalmente los botones al centro
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); // sombra superior ligera para separar visualmente del contenido
+    position: sticky; // mantiene la barra fija en la parte inferior al hacer scroll
+    bottom: 0; // la coloca pegada al borde inferior de la ventana
 }
 
 .bottom-nav__btn {
-    color: $color-primary;
-    font-size: 24px;
-    text-decoration: none;
-    padding: $spacing-sm;
-    transition: all 0.3s;
+    color: $color-primary; // color principal para los iconos o enlaces
+    font-size: 24px; // tamaño grande para los iconos/texto
+    text-decoration: none; // elimina subrayado en caso de ser enlace
+    padding: $spacing-sm; // espacio interno pequeño alrededor del botón
+    transition: all 0.3s; // transición suave para cambios de estilo
 
     &:hover,
     &.bottom-nav__btn--active {
-        color: $color-secondary;
-        transform: scale(1.2);
+        color: $color-secondary; // cambia a color secundario al pasar el ratón o si está activo
+        transform: scale(1.2); // efecto de zoom ligero para destacar el botón
     }
 }

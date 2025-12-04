@@ -1,5 +1,5 @@
 .main--contact-page {
-    padding: $spacing-xxl $spacing-lg;
-    justify-content: center;
-    align-items: center;
+    padding: $spacing-xxl $spacing-lg; // relleno interno: vertical muy amplio y horizontal mediano
+    justify-content: center; // centra horizontalmente los elementos hijos dentro del contenedor flex
+    align-items: center; // centra verticalmente los elementos hijos dentro del contenedor flex
 }

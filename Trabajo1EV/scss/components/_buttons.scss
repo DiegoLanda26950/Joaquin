@@ -1,112 +1,112 @@
 .btn-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: $spacing-sm;
-    padding: 16px;
-    border-radius: $border-radius-md;
-    text-decoration: none;
-    font-size: $font-size-medium;
-    font-weight: 600;
-    transition: all 0.3s;
-    cursor: pointer;
-    border: none;
+    display: flex; //se vuelve flex
+    align-items: center; // alinea verticalmente los elementos hijos al centro
+    justify-content: center; // centra horizontalmente los elementos hijos
+    gap: $spacing-sm; // añade espacio entre los elementos hijos
+    padding: 16px; //espacio interno
+    border-radius: $border-radius-md; 
+    text-decoration: none; // subrallado fuera
+    font-size: $font-size-medium; 
+    font-weight: 600; //negrita
+    transition: all 0.3s; // transicion
+    cursor: pointer; 
+    border: none; // bordes fuera
 
     &:hover {
-        transform: translateY(-2px);
+        transform: translateY(-2px); //elevar boton
     }
 }
 
 .btn-action--primary {
-    background: $color-accent;
-    color: $color-primary;
+    background: $color-accent; // color de fondo principal (acento)
+    color: $color-primary; // color del texto principal
 
     &:hover {
-        background: darken($color-accent, 5%);
+        background: darken($color-accent, 5%); // oscurece el fondo un 5% al pasar el ratón
     }
 }
 
 .btn-action--primary .btn-action__icon {
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 28px; // tamaño grande para el icono dentro del botón primario
+    font-weight: 300; // grosor de fuente ligero para el icono
 }
 
 .btn-action--secondary {
-    background: $color-accent;
-    color: $color-primary;
+    background: $color-accent; // mismo color de fondo que el primario
+    color: $color-primary; // mismo color de texto que el primario
 
     &:hover {
-        background: darken($color-accent, 5%);
+        background: darken($color-accent, 5%); // oscurece el fondo un 5% al pasar el ratón
     }
 }
 
 .btn-action--secondary .btn-action__icon-menu {
-    font-size: 20px;
+    font-size: 20px; // tamaño más pequeño para el icono de menú en el botón secundario
 }
 
 .btn-submit {
-    background: $color-accent;
-    color: $color-primary;
-    padding: 14px;
-    border-radius: $border-radius-md;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: $font-size-base;
-    display: block;
-    text-align: center;
-    transition: all 0.3s;
+    background: $color-accent; // color de fondo de acento
+    color: $color-primary; // color de texto principal
+    padding: 14px; // espacio interno
+    border-radius: $border-radius-md; // esquinas redondeadas
+    text-decoration: none; // elimina subrayado
+    font-weight: 600; // seminegrita
+    font-size: $font-size-base; // tamaño base de fuente
+    display: block; // ocupa todo el ancho disponible
+    text-align: center; // centra el texto
+    transition: all 0.3s; // transición suave
 
     &:hover {
-        background: darken($color-accent, 5%);
-        transform: translateY(-2px);
+        background: darken($color-accent, 5%); // oscurece el fondo al pasar el ratón
+        transform: translateY(-2px); // eleva el botón ligeramente
     }
 }
 
 .btn-cancel {
-    background: transparent;
-    color: $color-danger;
-    padding: 14px;
-    border-radius: $border-radius-md;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: $font-size-base;
-    display: block;
-    text-align: center;
-    border: 2px solid $color-danger;
-    transition: all 0.3s;
+    background: transparent; // fondo transparente
+    color: $color-danger; // texto en color de peligro (rojo normalmente)
+    padding: 14px; // espacio interno
+    border-radius: $border-radius-md; // esquinas redondeadas
+    text-decoration: none; // sin subrayado
+    font-weight: 600; // seminegrita
+    font-size: $font-size-base; // tamaño base de fuente
+    display: block; // ocupa todo el ancho
+    text-align: center; // centra el texto
+    border: 2px solid $color-danger; // borde rojo de 2px
+    transition: all 0.3s; // transición suave
 
     &:hover {
-        background: $color-danger;
-        color: $color-background;
+        background: $color-danger; // fondo rojo al pasar el ratón
+        color: $color-background; // texto cambia al color de fondo (normalmente blanco)
     }
 }
 
 .btn-add {
-    background: $color-dark;
-    color: $color-background;
-    padding: 12px 20px;
-    border-radius: $border-radius-md;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s;
+    background: $color-dark; // fondo oscuro
+    color: $color-background; // texto claro (normalmente blanco)
+    padding: 12px 20px; // espacio interno vertical y horizontal
+    border-radius: $border-radius-md; // esquinas redondeadas
+    border: none; // sin borde
+    cursor: pointer; // cursor tipo mano
+    font-size: 14px; // tamaño de fuente pequeño
+    font-weight: 500; // grosor medio
+    display: flex; // contenedor flexbox
+    align-items: center; // alinea verticalmente al centro
+    gap: 8px; // espacio entre elementos hijos
+    transition: all 0.3s; // transición suave
 
     &:hover {
-        background: darken($color-dark, 10%);
-        transform: translateY(-2px);
+        background: darken($color-dark, 10%); // oscurece el fondo un 10% al pasar el ratón
+        transform: translateY(-2px); // eleva el botón ligeramente
     }
 }
 
 .btn-add__icon {
-    font-size: 18px;
+    font-size: 18px; // tamaño de fuente para el icono dentro del botón "add"
 }
 
 .btn-media {
-    display: flex;
-    gap: $spacing-sm;
-    justify-content: center;
+    display: flex; // contenedor flexbox
+    gap: $spacing-sm; // espacio entre elementos hijos
+    justify-content: center; // centra horizontalmente los elementos
 }
