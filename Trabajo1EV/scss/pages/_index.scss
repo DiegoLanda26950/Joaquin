@@ -1,0 +1,64 @@
+.welcome-card {
+    margin-top: $spacing-xl;
+}
+
+.welcome-card__title {
+    font-size: 28px;
+    color: $color-primary;
+    font-weight: 700;
+    margin-bottom: $spacing-lg;
+    line-height: 1.3;
+}
+
+.welcome-card__btn {
+    background: $color-primary;
+    color: $color-background;
+    padding: 14px 50px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: $font-size-base;
+    display: inline-block;
+    margin-bottom: $spacing-md;
+    transition: all 0.3s;
+
+    &:hover {
+        background: darken($color-primary, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+.welcome-card__text {
+    font-size: 14px;
+    color: $color-dark;
+}
+
+.info-card__description {
+    color: $color-dark;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: $spacing-lg;
+}
+
+.info-card__title {
+    color: $color-primary;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: $spacing-md;
+}
+
+.info-card__cta {
+    font-size: 15px;
+    color: $color-dark;
+}
+
+.link {
+    color: $color-secondary;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $color-primary;
+    }
+}

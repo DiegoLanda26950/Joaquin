@@ -1,0 +1,173 @@
+.card {
+    background: $color-background;
+    border-radius: $border-radius-xl;
+    padding: $spacing-xl 35px;
+    box-shadow: $shadow-md;
+    text-align: center;
+}
+
+// Card de perfil
+.card-profile {
+    background: $color-background;
+    border-radius: $border-radius-lg;
+    padding: $spacing-lg;
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    box-shadow: $shadow-sm;
+}
+
+.card-profile__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $color-primary;
+}
+
+.card-profile__info {
+}
+
+.card-profile__title {
+    color: $color-primary;
+    font-size: $font-size-large;
+    margin-bottom: $spacing-xs;
+    font-weight: 600;
+}
+
+.card-profile__subtitle {
+    color: $color-dark;
+    font-size: $font-size-small;
+}
+
+// Card de menú
+.card-menu {
+    background: $color-background;
+    border-radius: $border-radius-lg;
+    padding: $spacing-sm;
+    box-shadow: $shadow-sm;
+}
+
+.card-menu__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-menu__item {
+    color: $color-primary;
+    text-decoration: none;
+    padding: 14px 12px;
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    font-size: $font-size-base;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background: #E0E0E0;
+    }
+}
+
+.card-menu__item--danger {
+    color: $color-danger;
+}
+
+.card-menu__icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.card-menu__star {
+    color: $color-primary;
+    font-size: 22px;
+}
+
+.card-menu__item--danger .card-menu__star {
+    color: $color-danger;
+}
+
+// Card de contacto
+.card-contact {
+    background: $color-background;
+    border-radius: $border-radius-xl;
+    padding: 45px 35px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: $shadow-md;
+}
+
+.card-contact__title {
+    font-size: $font-size-xlarge;
+    margin-bottom: 35px;
+    color: $color-primary;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.card-contact__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-contact__option {
+    color: $color-primary;
+    font-size: $font-size-medium;
+    padding: 16px $spacing-lg;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: $border-radius-md;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    text-align: left;
+    font-weight: 500;
+
+    &:hover {
+        background: $color-accent;
+        transform: translateX(5px);
+    }
+}
+
+.card-contact__icon {
+    font-size: 22px;
+    min-width: 25px;
+    text-align: center;
+}
+
+// Card principal (home)
+.card-main {
+    background: $color-background;
+    border-radius: $border-radius-xl;
+    padding: $spacing-xxl 70px;
+    box-shadow: $shadow-md;
+    text-align: center;
+    margin-top: $spacing-lg;
+}
+
+.card-main__title {
+    font-size: 22px;
+    color: $color-primary;
+    font-weight: 700;
+    margin-bottom: $spacing-md;
+}
+
+.card-main__subtitle {
+    color: $color-dark;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.card-main .btn-action {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

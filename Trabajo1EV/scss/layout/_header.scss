@@ -1,0 +1,52 @@
+.header {
+    background: $color-secondary;
+    padding: $spacing-lg $spacing-xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $shadow-sm;
+}
+
+.header--fixed {
+    box-shadow: none;
+}
+
+.header__logo {
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.header__profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid $color-background;
+    cursor: pointer;
+    transition: border-color 0.3s;
+
+    &:hover {
+        border-color: $color-primary;
+    }
+}
+
+.header__btn {
+    background: $color-primary;
+    color: $color-background;
+    padding: 10px 24px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+        background: darken($color-primary, 10%);
+        transform: translateY(-2px);
+    }
+}

@@ -1,0 +1,112 @@
+.btn-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-sm;
+    padding: 16px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-size: $font-size-medium;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.btn-action--primary {
+    background: $color-accent;
+    color: $color-primary;
+
+    &:hover {
+        background: darken($color-accent, 5%);
+    }
+}
+
+.btn-action--primary .btn-action__icon {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.btn-action--secondary {
+    background: $color-accent;
+    color: $color-primary;
+
+    &:hover {
+        background: darken($color-accent, 5%);
+    }
+}
+
+.btn-action--secondary .btn-action__icon-menu {
+    font-size: 20px;
+}
+
+.btn-submit {
+    background: $color-accent;
+    color: $color-primary;
+    padding: 14px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: $font-size-base;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+
+    &:hover {
+        background: darken($color-accent, 5%);
+        transform: translateY(-2px);
+    }
+}
+
+.btn-cancel {
+    background: transparent;
+    color: $color-danger;
+    padding: 14px;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: $font-size-base;
+    display: block;
+    text-align: center;
+    border: 2px solid $color-danger;
+    transition: all 0.3s;
+
+    &:hover {
+        background: $color-danger;
+        color: $color-background;
+    }
+}
+
+.btn-add {
+    background: $color-dark;
+    color: $color-background;
+    padding: 12px 20px;
+    border-radius: $border-radius-md;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+
+    &:hover {
+        background: darken($color-dark, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+.btn-add__icon {
+    font-size: 18px;
+}
+
+.btn-media {
+    display: flex;
+    gap: $spacing-sm;
+    justify-content: center;
+}

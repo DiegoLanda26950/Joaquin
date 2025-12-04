@@ -1,0 +1,62 @@
+@media (max-width: 480px) {
+    .header {
+        padding: 15px $spacing-lg;
+    }
+
+    .header__logo {
+        height: 35px;
+    }
+
+    .header__profile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main {
+        padding: $spacing-xl 15px;
+    }
+
+    .card,
+    .card-contact,
+    .card-main,
+    .card-form {
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .card-contact__option {
+        font-size: $font-size-base;
+        padding: 14px 16px;
+    }
+
+    // Footer responsive
+    .footer {
+        padding: $spacing-lg 15px;
+        font-size: 13px;
+    }
+
+    .footer__content {
+        gap: $spacing-lg;
+    }
+
+    .footer__nav,
+    .footer__contact {
+        gap: 8px;
+    }
+
+    .footer__link,
+    .footer__contact-text {
+        font-size: 14px;
+    }
+
+    .footer__social {
+        gap: 15px;
+    }
+
+    .footer__social-link {
+        font-size: 14px;
+    }
+}

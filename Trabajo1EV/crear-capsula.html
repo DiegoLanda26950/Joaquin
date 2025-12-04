@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timelapse - Crear Cápsula</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <a href="home.html">
+            <img src="./img/LogoCompletoClaro-removebg-preview.png" alt="Timelapse" class="header__logo">
+        </a>
+        <a href="menu.html">
+            <img src="./img/Perfil-removebg-preview.png" alt="Perfil" class="header__profile">
+        </a>
+    </header>
+
+    <main class="main">
+        <section class="card-form">
+            <form class="card-form__form">
+                <div class="card-form__group">
+                    <label for="nombre" class="card-form__label">Nombre Capsula:</label>
+                    <input type="text" id="nombre" name="nombre" class="card-form__input" placeholder="Ej: Verano 2025" required>
+                </div>
+
+                <div class="card-form__group">
+                    <label for="participantes" class="card-form__label">Participantes:</label>
+                    <input type="text" id="participantes" name="participantes" class="card-form__input" placeholder="Añade participantes">
+                </div>
+
+                <div class="card-form__group">
+                    <label for="recuerdos" class="card-form__label">Pon tus recuerdos aqui:</label>
+                    <textarea id="recuerdos" name="recuerdos" class="card-form__textarea" placeholder="Escribe tus recuerdos..." required></textarea>
+                </div>
+
+                <div class="btn-media">
+                    <button type="button" class="btn-add">
+                        <span class="btn-add__icon">📷</span> Añadir imagen
+                    </button>
+                    <button type="button" class="btn-add">
+                        <span class="btn-add__icon">🎥</span> Añadir video
+                    </button>
+                </div>
+
+                <div class="card-form__group">
+                    <label for="fecha" class="card-form__label">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" class="card-form__input" required>
+                </div>
+
+                <hr class="card-form__separator">
+
+                <a href="home.html" class="btn-submit">Sellar Capsula</a>
+                <a href="home.html" class="btn-cancel">Cancelar</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
